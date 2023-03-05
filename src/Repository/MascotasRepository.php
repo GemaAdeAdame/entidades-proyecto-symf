@@ -1,0 +1,66 @@
+<?php
+
+namespace App\Repository;
+
+use App\Entity\Mascotas;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\Persistence\ManagerRegistry;
+
+/**
+ * @extends ServiceEntityRepository<Mascotas>
+ *
+ * @method Mascotas|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Mascotas|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Mascotas[]    findAll()
+ * @method Mascotas[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ */
+class MascotasRepository extends ServiceEntityRepository
+{
+    public function __construct(ManagerRegistry $registry)
+    {
+        parent::__construct($registry, Mascotas::class);
+    }
+
+    public function save(Mascotas $entity, bool $flush = false): void
+    {
+        $this->getEntityManager()->persist($entity);
+
+        if ($flush) {
+            $this->getEntityManager()->flush();
+        }
+    }
+
+    public function remove(Mascotas $entity, bool $flush = false): void
+    {
+        $this->getEntityManager()->remove($entity);
+
+        if ($flush) {
+            $this->getEntityManager()->flush();
+        }
+    }
+
+//    /**
+//     * @return Mascotas[] Returns an array of Mascotas objects
+//     */
+//    public function findByExampleField($value): array
+//    {
+//        return $this->createQueryBuilder('m')
+//            ->andWhere('m.exampleField = :val')
+//            ->setParameter('val', $value)
+//            ->orderBy('m.id', 'ASC')
+//            ->setMaxResults(10)
+//            ->getQuery()
+//            ->getResult()
+//        ;
+//    }
+
+//    public function findOneBySomeField($value): ?Mascotas
+//    {
+//        return $this->createQueryBuilder('m')
+//            ->andWhere('m.exampleField = :val')
+//            ->setParameter('val', $value)
+//            ->getQuery()
+//            ->getOneOrNullResult()
+//        ;
+//    }
+}

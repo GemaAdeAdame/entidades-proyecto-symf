@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Datospersonales index{% endblock %}
+
+{% block body %}
+    <h1>Datospersonales index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Fechanacimiento</th>
+                <th>Dni</th>
+                <th>Mascotas</th>
+                <th>Tipomascota</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for datospersonale in datospersonales %}
+            <tr>
+                <td>{{ datospersonale.id }}</td>
+                <td>{{ datospersonale.nombre }}</td>
+                <td>{{ datospersonale.apellidos }}</td>
+                <td>{{ datospersonale.fechanacimiento ? datospersonale.fechanacimiento|date('Y-m-d') : '' }}</td>
+                <td>{{ datospersonale.dni }}</td>
+                <td>{{ datospersonale.mascotas }}</td>
+                <td>{{ datospersonale.Tipomascota }}</td>
+                <td>
+                    <a href="{{ path('app_datospersonales_show', {'id': datospersonale.id}) }}">show</a>
+                    <a href="{{ path('app_datospersonales_edit', {'id': datospersonale.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_datospersonales_new') }}">Create new</a>
+{% endblock %}
