@@ -14,11 +14,8 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 
 
@@ -34,6 +31,9 @@ These instructions will get you a copy of the project up and running on your loc
 Make sure you have installed all of the following prerequisites on your development machine:
 * Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+* Composer
+* Panther for test
+* Symfony - PHP framework
 
 
 ### Installing
@@ -88,6 +88,8 @@ Add additional notes about how to deploy this on a live system.
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 - [Symfony](https://symfony.com/) - Framework PHP
 - [SQL] -DataBase
+- [GitHub] - Repository
+- [XAMPP] - Local server
 
 
 ## ✍️ Authors <a name = "authors"></a>
