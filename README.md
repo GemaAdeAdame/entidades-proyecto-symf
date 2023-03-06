@@ -88,7 +88,8 @@ Add additional notes about how to deploy this on a live system.
 
 
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [Symfony] (https://symfony.com/) - Framework PHP
+- [Symfony](https://symfony.com/) - Framework PHP
+- [SQL] -DataBase
 
 
 ## ✍️ Authors <a name = "authors"></a>
