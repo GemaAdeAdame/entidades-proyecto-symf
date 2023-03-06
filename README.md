@@ -93,8 +93,8 @@ Add additional notes about how to deploy this on a live system.
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@gemaadeadame](https://github.com/gemaadeadame)
-- [@auri78] ()
-- [@milarte ] ()
+- [@auri78] (https://github.com/Auri78)
+- [@milarte ] (https://github.com/milarte1)
 
 
 
