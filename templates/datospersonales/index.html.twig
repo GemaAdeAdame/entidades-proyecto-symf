@@ -15,7 +15,7 @@
                 <th>Dni</th>
                 <th>Mascotas</th>
                 <th>Tipomascota</th>
-                <th>actions</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -29,8 +29,8 @@
                 <td>{{ datospersonale.mascotas }}</td>
                 <td>{{ datospersonale.Tipomascota }}</td>
                 <td>
-                    <a href="{{ path('app_datospersonales_show', {'id': datospersonale.id}) }}">show</a>
-                    <a href="{{ path('app_datospersonales_edit', {'id': datospersonale.id}) }}">edit</a>
+                    <a id="ajustes" href="{{ path('app_datospersonales_show', {'id': datospersonale.id}) }}">mostrar</a>
+                    <a id= "ajustes2" href="{{ path('app_datospersonales_edit', {'id': datospersonale.id}) }}">editar</a>
                 </td>
             </tr>
         {% else %}
@@ -41,5 +41,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_datospersonales_new') }}">Create new</a>
+    <a href="{{ path('app_datospersonales_new') }}">Crear nuevo</a>
 {% endblock %}
