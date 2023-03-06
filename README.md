@@ -22,7 +22,7 @@
 - [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+
 
 ## 🧐 About <a name = "about"></a>
 
@@ -85,20 +85,14 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [ReactJs](https://reactjs.org) - Web Framework
+
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [Jest](https://jestjs.io) - Testing Framework
-- [MaterialUI](https://mui.com) - Library of React UI components
-- [ReactQuery](https://react-query-v3.tanstack.com) - Data-fetching library for React
-- [React-router-dom](https://reactrouter.com/en/main) - Client side Routing
+- [Symfony] (https://symfony.com/) - Framework PHP
 
 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@gemaadeadame](https://github.com/gemaadeadame)
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- [Inspiration]
-- [References]
+
